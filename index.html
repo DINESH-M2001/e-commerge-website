@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home - E-commerce</title>
+  </head>
+  <body>
+    <div class="pb-10">
+      <header class="bg-white shadow-md mb-6">
+        <nav class="container mx-auto px-6 py-3">
+          <div class="flex justify-between items-center">
+            <a
+              href="./index.html"
+              target="_self"
+              class="text-xl font-bold text-gray-800"
+            >
+              Trends
+            </a>
+            <div class="flex items-center space-x-4">
+              <a href="./addProduct.html" target="_self">Add Product</a>
+              <a
+                href="./cart.html"
+                class="text-white/90 px-2 py-1 rounded-md hover:text-gray-900 flex items-center bg-gray-700"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                <span>cart</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="px-2 md:px-12 lg:px-32">
+        <h1 class="text-xl font-semibold text-gray-800/90 mb-4">Products</h1>
+        <div
+          id="product-container"
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        ></div>
+      </div>
+    </div>
+    <script src="assets/js/home.js"></script>
+  </body>
+</html>

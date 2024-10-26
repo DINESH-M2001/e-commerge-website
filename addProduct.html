@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Add Product</title>
+  </head>
+  <body>
+    <div class="">
+      <header class="bg-white shadow-md mb-6">
+        <nav class="container mx-auto px-6 py-3">
+          <div class="flex justify-between items-center">
+            <a
+              href="./index.html"
+              target="_self"
+              class="text-xl font-bold text-gray-800"
+            >
+              Trends
+            </a>
+            <div class="flex items-center space-x-4">
+              <a href="#" class="text-gray-600 hover:text-gray-900">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                cart
+              </a>
+              <a href="./addProduct.html" target="_self">Add Product</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="px-2 md:px-12 lg:px-32">
+        <h1 class="text-2xl font-bold my-4">Add New Product</h1>
+        <form id="product-form" class="max-w-md mx-auto">
+          <div class="w-full p-2 border rounded mb-2 flex flex-col gap-1">
+            <label class="text-medium text-gray-600 font-thik">Product Name </label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter product Name"
+              class="outline-none focus:outline-none"
+              required
+            />
+          </div>
+          
+          <div class="w-full p-2 border rounded mb-2 flex flex-col gap-1">
+            <label class="text-medium text-gray-600 font-thik">Description </label>
+            <input
+              type="text"
+              name="description"
+              placeholder="Enter description"
+              class="outline-none focus:outline-none"
+              required
+            />
+          </div>
+          
+          <div class="w-full p-2 border rounded mb-2 flex flex-col gap-1">
+            <label class="text-medium text-gray-600 font-thik">price </label>
+            <input
+              type="number"
+              name="price"
+              placeholder="Enter price"
+              class="outline-none focus:outline-none"
+              required
+            />
+          </div>
+          
+          <div class="w-full p-2 border rounded mb-2 flex flex-col gap-1">
+            <label class="text-medium text-gray-600 font-thik">image </label>
+            <input
+              type="text"
+              name="image"
+              placeholder="Enter Image URL"
+              class="outline-none focus:outline-none"
+              required
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="bg-green-500 text-white w-full p-2 rounded"
+          >
+            Add Product
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="assets/js/addProduct.js"></script>
+  </body>
+</html>
